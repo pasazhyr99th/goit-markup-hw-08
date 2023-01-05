@@ -1,0 +1,8 @@
+.header {
+    border-bottom: 1px solid getColor('border-header');
+}
+
+.header--position {
+    display: flex;
+    align-items: center;
+}

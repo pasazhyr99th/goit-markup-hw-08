@@ -1,0 +1,20 @@
+.footer__mail,
+.footer__tel {
+    color: getColor('contacts-footer-color');
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    font-style: normal;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: getColor('blue-text-color');
+    }
+}
+
+.footer__mail {
+    display: block;
+    margin-bottom: 12px;
+}

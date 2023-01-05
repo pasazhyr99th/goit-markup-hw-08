@@ -1,0 +1,53 @@
+.footer-soc {
+    margin-left: 93px;
+}
+
+.footer-soc__title {
+    margin-bottom: 20px;
+
+    color: getColor('primary-bg-color');
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.footer-soc__actions {
+    display: flex;
+}
+
+.footer-soc__item {
+    flex-basis: calc((100% - 40px) / 4);
+
+    & + & {
+        margin-left: 10px;
+    }
+    // Ви напевно забракуєте це, але як на мене це дуже зручно
+}
+
+.footer-soc__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+
+    color: getColor('primary-bg-color');
+    background-color: getColor('bg-footer-soc');
+    border: none;
+    border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background-color: getColor('blue-text-color');
+    }
+}
+
+.footer-soc__icon {
+    fill: currentColor;
+}

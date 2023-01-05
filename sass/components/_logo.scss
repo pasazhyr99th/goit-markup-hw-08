@@ -1,0 +1,24 @@
+.header__logo {
+    font-family: 'Raleway';
+    color: getColor('black-text-color');
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 28px;
+
+    font-family: 'Raleway';
+    color: getColor('primary-bg-color');
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.logo--blue {
+    color: getColor('blue-text-color');
+}

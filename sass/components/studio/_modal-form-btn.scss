@@ -1,0 +1,25 @@
+.modal__btn--submit {
+    display: block;
+    padding: 10px 52px;
+    margin-right: auto;
+    margin-left: auto;
+
+    font-family: 'Roboto';
+    color: getColor('primary-bg-color');
+    background-color: getColor('blue-text-color');
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    border: 1px solid transparent;
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+        background-color: getColor('button-focus-color');
+    }
+}

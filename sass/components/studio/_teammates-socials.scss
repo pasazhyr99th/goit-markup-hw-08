@@ -1,0 +1,38 @@
+.teammates__socials {
+    display: flex;
+    margin: 0 32px;
+}
+
+.teammates__socials-icon {
+    flex-basis: calc((100% - 40px) / 4);
+}
+
+.teammates__socials-icon + .teammates__socials-icon {
+    margin-left: 10px;
+}
+
+.teammates__socials-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+
+    color: getColor('icons-noactive-color');
+    border: none;
+    border-radius: 50%;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+       background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: getColor('primary-bg-color');
+        background-color: getColor('blue-text-color');
+    }
+}
+
+.soc-icon {
+    fill: currentColor;
+}

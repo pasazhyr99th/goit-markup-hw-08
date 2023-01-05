@@ -1,0 +1,32 @@
+$colors: (
+    'primary-bg-color': #FFFFFF,
+    'primary-text-color': #212121,
+    'black-text-color': #000000,
+    'blue-text-color': #2196F3,
+    'bg-hero-color': #C4C4C4,
+    'hero-gradient': rgba(47, 48, 58, 0.4),
+    'bg-footer-color': #2F303A,
+    'contacts-header-color': #757575,
+    'contacts-footer-color': rgba(255, 255, 255, 0.6),
+    'button-focus-color': #188CE8,
+    'bg-team-color': #F5F4FA,
+    'border-header': #ECECEC,
+    'border-project-photo': #EEEEEE,
+    'icons-noactive-color': #AFB1B8,
+    'bg-footer-soc': rgba(255, 255, 255, 0.1),
+    'bg-portfolio-overlay': rgba(33, 150, 243, 0.9),
+    'backdrop-color': rgba(0, 0, 0, 0.2),
+    'border-form': rgba(33, 33, 33, 0.2),
+    'border-modal-btn': rgba(0, 0, 0, 0.1),
+    'form-placeholder': rgba(117, 117, 117, 0.5),
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
+
+body {
+    font-family: 'Roboto', 'Raleway', 'sans-serif';
+    color: getColor('primary-text-color');
+    background: getColor('primary-bg-color');
+}
