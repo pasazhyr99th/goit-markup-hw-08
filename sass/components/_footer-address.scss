@@ -1,9 +1,17 @@
-.footer__address {
-    margin-bottom: 12px;
+.footer__content {
+    margin-bottom: 60px;
+}
+
+.footer__address { 
+    margin-bottom: 8px;
 
     color: getColor('primary-bg-color');
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width: 1200px){
+        margin-bottom: 12px; 
+    }
 }

@@ -1,5 +1,7 @@
 .footer-soc {
-    margin-left: 93px;
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+    }
 }
 
 .footer-soc__title {
@@ -16,15 +18,24 @@
 
 .footer-soc__actions {
     display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
 }
 
 .footer-soc__item {
-    flex-basis: calc((100% - 40px) / 4);
-
-    & + & {
-        margin-left: 10px;
+    margin-left: 10px;
+    &:nth-child(1){
+        margin-left: 0;
     }
-    // Ви напевно забракуєте це, але як на мене це дуже зручно
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 40px) / 4);
+        
+        & + & {
+            margin-left: 10px;
+        }
+    }
+    
 }
 
 .footer-soc__link {

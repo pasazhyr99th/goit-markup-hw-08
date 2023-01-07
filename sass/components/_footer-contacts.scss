@@ -16,5 +16,9 @@
 
 .footer__mail {
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
+
+    @media screen and (min-width:1200px) {
+        margin-bottom: 12px;
+    }
 }

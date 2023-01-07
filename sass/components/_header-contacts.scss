@@ -1,6 +1,12 @@
 .header__contacts {
-    display: flex;
-    margin-left: auto;
+    @media screen and (min-width: 480px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px){
+        display: flex;
+        margin-left: auto;
+    }
 }
 
 .header__contacts-item + .header__contacts-item {
