@@ -1,9 +1,9 @@
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 118px;
+    padding-bottom: 118px;
 
     max-width: 1600px;
-    height: 600px;
+    height: 400px;
     margin-right: auto;
     margin-left: auto;
     background-color: getColor('bg-hero-color');
@@ -16,21 +16,34 @@
     background-size: cover;
 
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+        height: 600px;
+    }
 }
 
 .hero__title {
-    margin-top: 0;
-    margin-bottom: 30px;
-    max-width: 700px;
+    // margin-top: 0;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 30px;
+    width: 360px;
 
     color: getColor('primary-bg-color');
     text-transform: uppercase;
-    font-size: 44px;
+    font-size: 26px;
     font-weight: 900;
-    line-height: 1.36;
+    line-height: 1.62;
     letter-spacing: 0.06em;
+
+    @media screen and (min-width: 1200px) {
+        width: 700px;
+        
+        font-size: 44px;
+        line-height: 1.36;
+    }
 }
 
 .hero__btn {
@@ -55,5 +68,9 @@
     &:hover,
     &:focus {
         background-color: getColor('button-focus-color');
+    }
+
+    @media screen and (min-width: 1200px){
+        padding: 10px 32px;
     }
 }
