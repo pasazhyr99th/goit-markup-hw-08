@@ -19,7 +19,9 @@
     <header class="header">
         <div class="container header--position">
             <a href="./index.html" class="header__logo link"><span class="logo--blue">Web</span>Studio</a>
-            <div class="menu-container" id="menu-container" data-menu>
+            <div class="js-menu-container" 
+            id="menu-container" 
+            data-menu>
                 <nav class="header__navigation">
                     <ul class="header__navigation-list list">
                         <li class="header__navigation-item">
@@ -67,7 +69,7 @@
                 </ul>
             </div>
             <button type="button" 
-                class="menu-btn is-open" 
+                class="menu-btn js-open-menu js-close-menu" 
                 aria-expanded="false"
                 aria-controls="menu-container"
                 data-menu-button
@@ -180,12 +182,16 @@
                 <h2 class="team__title">Наша команда</h2>
                 <ul class="teammates list">
                     <li class="teammates__item">
-                        <img srcset="./images/ihor.jpg 1x, ./images/ihor@2x.jpg 2x"
-                        src="./images/ihor.jpg" 
-                        class="teammates__photo card" 
-                        alt="Ігор Дем'яненко" 
-                        width="270"
-                        >
+                        <picture>
+                            <source srcset="./images/desktop-ihor.jpg 1x, ./images/desktop-ihor@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/tablet-ihor.jpg 1x, ./images/tablet-ihor@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/mobile-ihor.jpg 1x, ./images/mobile-ihor@2x.jpg 2x" media="(min-width: 480px)" />
+                            <img src="./images/ihor.jpg" 
+                            class="teammates__photo card"
+                            alt="Ігор Дем'яненко" 
+                            width="270"
+                            >
+                        </picture>
                         <div class="teammates__position-name">
                             <h3 class="teammates__name">Ігор Дем'яненко</h3>
                             <p class="teammates__position">Product Designer</p>
@@ -222,12 +228,12 @@
                         </div>
                     </li>
                     <li class="teammates__item">
-                        <img srcset="./images/olha.jpg 1x, ./images/olha@2x.jpg 2x"
-                        src="./images/olha.jpg" 
-                        class="teammates__photo card" 
-                        alt="Ольга Рєпіна" 
-                        width="270"
-                        >
+                        <picture>
+                            <source srcset="./images/desktop-olha.jpg 1x, ./images/desktop-olha@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/tablet-olha.jpg 1x, ./images/tablet-olha@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/mobile-olha.jpg 1x, ./images/mobile-olha@2x.jpg 2x" media="(min-width: 480px)" />
+                            <img src="./images/olha.jpg" class="teammates__photo card" alt="Ольга Рєпіна" width="270">
+                        </picture>
                         <div class="teammates__position-name">
                             <h3 class="teammates__name">Ольга Рєпіна</h3>
                             <p class="teammates__position">Frontend Developer</p>
@@ -264,12 +270,12 @@
                         </div>
                     </li>
                     <li class="teammates__item">
-                        <img srcset="./images/mykola.jpg 1x, ./images/mykola@2x.jpg 2x"
-                        src="./images/mykola.jpg" 
-                        class="teammates__photo card" 
-                        alt="Микола Тарасов" 
-                        width="270"
-                        >
+                        <picture>
+                            <source srcset="./images/desktop-mykola.jpg 1x, ./images/desktop-mykola@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/tablet-mykola.jpg 1x, ./images/tablet-mykola@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/mobile-mykola.jpg 1x, ./images/mobile-mykola@2x.jpg 2x" media="(min-width: 480px)" />
+                            <img src="./images/mykola.jpg" class="teammates__photo card" alt="Микола Тарасов" width="270">
+                        </picture>
                         <div class="teammates__position-name">
                             <h3 class="teammates__name">Микола Тарасов</h3>
                             <p class="teammates__position">Marketing</p>
@@ -306,12 +312,12 @@
                         </div>
                     </li>
                     <li class="teammates__item">
-                        <img srcset="./images/mykhailo.jpg 1x, ./images/mykhailo@2x.jpg 2x"
-                        src="./images/mykhailo.jpg" 
-                        class="teammates__photo card" 
-                        alt="Михайло Єрмаков" 
-                        width="270"
-                        >
+                        <picture>
+                            <source srcset="./images/desktop-mykhailo.jpg 1x, ./images/desktop-mykhailo@2x.jpg 2x" media="(min-width: 1200px)" />
+                            <source srcset="./images/tablet-mykhailo.jpg 1x, ./images/tablet-mykhailo@2x.jpg 2x" media="(min-width: 768px)" />
+                            <source srcset="./images/mobile-mykhailo.jpg 1x, ./images/mobile-mykhailo@2x.jpg 2x" media="(min-width: 480px)" />
+                            <img src="./images/mykhailo.jpg" class="teammates__photo card" alt="Михайло Єрмаков" width="270">
+                        </picture>
                         <div class="teammates__position-name">
                             <h3 class="teammates__name">Михайло Єрмаков</h3>
                             <p class="teammates__position">UI Designer</p>
@@ -531,6 +537,9 @@
     <!-- Скріпти JS -->
 
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+        integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+        crossorigin="anonymous"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

@@ -74,6 +74,13 @@
     }
 }
 
+.header__navigation-link--active {
+    @media screen and (max-width: 767px) {
+        color: getColor('blue-text-color');
+    }
+    
+}
+
 .header__navigation-link--active::after {
     @media screen and (max-width: 767px) {
         display: none;

@@ -349,7 +349,7 @@ ul {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.menu-container {
+.js-menu-container {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -361,7 +361,7 @@ ul {
           justify-content: space-between;
 }
 @media screen and (max-width: 767px) {
-  .menu-container {
+  .js-menu-container {
     display: none;
     padding: 48px 40px;
     position: absolute;
@@ -371,7 +371,7 @@ ul {
     height: 796px;
     background-color: #FFFFFF;
   }
-  .menu-container.is-open {
+  .js-menu-container.is-open {
     display: block;
   }
 }
@@ -557,6 +557,12 @@ ul {
 }
 .header__navigation-link:hover, .header__navigation-link:focus, .header__navigation-link:active {
   color: #2196F3;
+}
+
+@media screen and (max-width: 767px) {
+  .header__navigation-link--active {
+    color: #2196F3;
+  }
 }
 
 @media screen and (max-width: 767px) {
