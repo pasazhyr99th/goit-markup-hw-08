@@ -1,11 +1,10 @@
 .header__navigation-list {
-    @media screen and (min-width: 480px){
+    @media screen and (max-width: 767px){
         display: none;
     }
 
     @media screen and (min-width: 768px) {
         display: flex;
-        margin-left: 88px;
     }
 
     @media screen and (min-width: 1200px){
@@ -15,11 +14,19 @@
 }
 
 .header__navigation-item {
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
         display: none;
     }
 
-    @media screen and (min-width: 1200px){
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        position: relative;
+
+        & + & {
+            margin-left: 50px;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
         position: relative;
         
         &:not(:last-child) {
@@ -29,11 +36,12 @@
 }
 
 .header__navigation-link {
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
         display: none;
     }
-    
-    @media screen and (min-width: 1200px) {
+
+    @media screen and (min-width: 768px) {
+        position: relative;
         display: block;
         padding-top: 32px;
         padding-bottom: 32px;
@@ -56,11 +64,11 @@
 }
 
 .header__navigation-link--active::after {
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 767px) {
         display: none;
     }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
         position: absolute;
         content: '';
         width: 100%;
