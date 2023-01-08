@@ -10,17 +10,43 @@
     background-image: linear-gradient(to right,
             rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url('../images/bghero.jpg');
+        url('./images/mobilehero.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 
     text-align: center;
 
+
+    @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: linear-gradient(to right,
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url('./images/mobilehero@2x.jpg');
+    }
+
     @media screen and (min-width: 1200px) {
         padding-top: 200px;
         padding-bottom: 200px;
         height: 600px;
+
+        background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url('/images/desktophero.jpeg');
+
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: linear-gradient(to right,
+                        rgba(47, 48, 58, 0.4),
+                        rgba(47, 48, 58, 0.4)),
+                    url('./images/desktophero@2x.jpg');
+            }
     }
 }
 
