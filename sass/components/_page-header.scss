@@ -20,16 +20,14 @@
     padding: 0;
     border: none;
     background-color: transparent;
-}
 
-.menu-btn .icon-close {
-    display: none;
-}
-
-.menu-btn.is-open .icon-close {
-    display: block;
-}
-
-.menu-btn.is-open .icon-menu {
-    display: none;
+    & .icon-close {
+        display: none;
+    }
+    &.is-open .icon-close {
+        display: block;
+    }
+    &.is-open .icon-menu {
+        display: none;
+    }
 }
